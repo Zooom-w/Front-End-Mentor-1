@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.section1 {
+    background-color: rgb(14, 14, 61);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 456px;
+    height: 344px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+#img {
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sm {
+    height: 342px;
+    width: 456px;
+}
+
+.divimg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.im {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ligne3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 54px;
+}
+
+.titreandtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texte {
+    margin-top: 36px;
+    width: 347px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+h1 {
+    width: 282px;
+    margin-top: 48px;
+    margin-right: 65px;
+}
+
+#span {
+    color: rgb(177, 121, 179);
+}
+
+.minitext {
+    opacity: 0.5;
+    font-size: 11px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.im::before {
+    content: "";
+    background-color: rgba(119, 46, 119, 0.62);
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*************************MEDIA QUERIES*************************/
+@media screen and (max-width: 844px) {
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #img {
+        position: relative;
+        object-fit: unset;
+        height: 100%;
+        max-width: 100%; /*important pour pas deformer l'image*/
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 100%;
+
+    }
+
+    .im::after {
+        content: "";
+        background-color: rgba(119, 46, 119, 0.62);
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px; 
+    }
+
+    .im::before {
+        display: none;
+
+    }
+
+    .section1 {
+        background-color: rgb(14, 14, 61);
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 315px;
+        height: 528px;
+        padding: 9px;
+    }
+
+    h1 {
+        margin-left: 0;
+        text-align: center;
+        width: 238px;
+        margin-right: 0px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .texte {
+        margin-left: 0;
+        text-align: center;
+        width: 244px;
+    }
+
+    .ligne3 {
+        flex-direction: column;
+        gap: 29px;
+    }
+
+    .im {
+        height: 100%;
+        position: relative;
+        width: 100%
+    }
+
+    .minitext {
+        margin-right: 0;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .sm {
+        height: 215px;
+        width: 333px;
+    }
+
+    .divimg {
+        height: 100%;
+        width: 100%;
+    }
+
+}

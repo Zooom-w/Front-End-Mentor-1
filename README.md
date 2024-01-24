@@ -1,6 +1,7 @@
 # Frontend Mentor - Stats preview card component
 
-![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+![Screenshot 2024-01-24 at 10-13-37 Frontend Mentor Stats preview card component](https://github.com/Zooom-w/Front-End-Mentor-1/assets/148760503/816352d8-5438-48dd-b82a-3ec5c44e3e12)
+
 
 ## Welcome! 👋
 
